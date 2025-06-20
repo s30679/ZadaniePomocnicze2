@@ -8,9 +8,9 @@ namespace ZadanieProbne2.Controllers;
 [Route("api/[controller]")]
 public class CharacterController : ControllerBase
 {
-    private readonly CharacterService _characterService;
+    private readonly ICharacterService _characterService;
 
-    public CharacterController(CharacterService characterService)
+    public CharacterController(ICharacterService characterService)
     {
         _characterService = characterService;
     }
